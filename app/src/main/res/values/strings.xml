@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">End_Project</string>
+    <string name="app_name">Mushroom</string>
+    <string name="action_external_web">About</string>
 </resources>
