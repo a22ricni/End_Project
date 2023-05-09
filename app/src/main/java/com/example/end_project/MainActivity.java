@@ -11,15 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-    public void showExternalWebPage(){
-        myWebView.loadUrl("https://his.se");
-    }
-
-    public void showInternalWebPage(){
-        myWebView.loadUrl("file:///android_asset/about.html");
-    }
-
-    WebView myWebView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        myWebView = findViewById(R.id.webview);
-        myWebView.setWebViewClient(new WebViewClient());
-        myWebView.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override
@@ -49,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
             Log.d("==>","Will display external web page");
-            showExternalWebPage();
             return true;
         }
 
