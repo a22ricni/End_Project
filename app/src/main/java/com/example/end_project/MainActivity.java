@@ -13,6 +13,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -61,8 +64,15 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
 
         Log.d("MainActivity", json);
 
+        Gson gson = new Gson();
+        Type type = new TypeToken<List<Mushroom>>() {}.getType();
+        List<Mushroom> listOfMountain = gson.fromJson(json,type);
+
         ArrayList<RecyclerViewItem> items = new ArrayList<>();
 
+        for (Mushroom m: listOfMountain) {
+            items.add(new RecyclerViewItem(m.getName()));
+        }
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, items, new RecyclerViewAdapter.OnClickListener() {
             @Override
