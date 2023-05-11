@@ -3,7 +3,7 @@
     <string name="aboutScreen">About</string>
     <string name="homeScreen">Home</string>
 
-    <string name="målgrupp">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque, delectus doloribus eligendi exercitationem magni molestias odio, possimus quod saepe tempora tenetur unde voluptatibus. Amet asperiores aut autem culpa eius error eum excepturi, fugit ipsa laborum nesciunt nostrum numquam odio odit quaerat quidem quisquam quo rerum tempora totam veritatis voluptates voluptatibus. Accusantium consequatur cupiditate delectus dolor ducimus, earum fugiat inventore iure maxime nisi praesentium quas quisquam repellat, repellendus repudiandae sequi suscipit voluptas voluptatibus! Alias, aperiam consectetur consequatur cupiditate dolorem ea eius enim ex facere fuga minus, necessitatibus nihil nostrum odit omnis pariatur perferendis, provident quod ratione recusandae sed sunt vitae.
+    <string name="targetGroup">
+        Målgruppen för denna app är för personer som vill veta mer om den fantastiska världen svampar. Just nu visar bara appen en av de giftigaste svampar men också andra svampar som är giftiga men inte dödliga, utan de är svampar som såg roliga ut. Men bör ändå undvikas när man stöter på dessa. Med hjälp av denna app kan fler människor lära sig mer om svampar men också veta mer om vad man ska undvika när man stöter på dessa i naturen. Men appen är också för personer som är nyfikna på vad för sorts svampar som finns i naturen.
     </string>
 </resources>

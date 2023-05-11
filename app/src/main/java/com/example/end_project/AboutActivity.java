@@ -19,7 +19,8 @@ public class AboutActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView textView = findViewById(R.id.textView);
+        TextView aboutTitle = findViewById(R.id.aboutTitle);
+        TextView targetGroup = findViewById(R.id.targetGroup);
     }
 
     @Override
