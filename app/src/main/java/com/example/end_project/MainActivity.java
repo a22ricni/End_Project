@@ -1,11 +1,10 @@
 package com.example.end_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +23,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements JsonTask.JsonTaskListener{
 
     private String JSON_URL = "https://mobprog.webug.se/json-api?login=a22ricni";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         new JsonTask(this).execute(JSON_URL);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -51,8 +50,13 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_external_web) {
+        if (id == R.id.aboutScreen) {
             Log.d("==>","Will display external web page");
+
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+
+            startActivity(intent);
+
             return true;
         }
 
