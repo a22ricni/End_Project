@@ -12,7 +12,7 @@ Attributen som jag valde har varit ID och login som var ett måste. Men jag vald
 och Category. Attributen Name var då namnet på svampen, Location var svamparnas livsmiljö och var
 någonstans man kunde hitta dessa, men det var inga platser på vilket land som man kunde hitta dessa 
 svampar. Och den sista car Category som var en kategori på hur giftiga dessa svampar var, antingen
-var svamparna gift halten "High", "Medium" och "Low".
+var svamparna gift halten "High", "Medium" eller "Low".
 
 https://mobprog.webug.se/json-api?login=a22ricni 
 Länk för Json filen.
